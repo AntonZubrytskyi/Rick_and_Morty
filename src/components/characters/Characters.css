@@ -1,0 +1,74 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 10px 10px 20px 10px;
+}
+
+.card h1 {
+    font-size: 25px;
+    border-bottom: 1px #fff solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.card h1 {
+    font-size: 25px;
+    border-bottom: 1px #fff solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.characters-item-img {
+    width: 100%;
+}
+
+.characters-item-description {
+    padding: 10px
+}
+
+.paginate{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.paginateItem {
+    cursor: pointer;
+    color: black;
+}
+
+
+/*POPUP STYLES*/
+
+.backgroundPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(120, 120, 120, 0.8);
+}
+
+.popupContainer {
+    padding: 20px;
+    position: absolute;
+    z-index: 11;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 70px;
+    text-align: center;
+    width: 400px;
+}
+
+.popupContainerExitButton {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+}
