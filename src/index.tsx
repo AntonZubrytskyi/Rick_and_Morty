@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -16,11 +16,11 @@ const store = setupStore();
 root.render(
   <Provider store={store}>
     <GoogleOAuthProvider clientId={clientId}>
-      <BrowserRouter>
+      <HashRouter>
         <React.StrictMode>
           <App />
         </React.StrictMode>
-      </BrowserRouter>
+      </HashRouter>
     </GoogleOAuthProvider>
   </Provider>,
 );
