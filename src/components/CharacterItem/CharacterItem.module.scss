@@ -9,6 +9,10 @@
     }
   }
 
+  &__one__container {
+    @extend .item__container;
+  }
+
   &__image {
     border-radius: 4px;
     width: 100%;
@@ -35,5 +39,11 @@
     line-height: 21px;
     letter-spacing: 0.25px;
     color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media (min-width: 992px) {
+  .item__one__container {
+    max-width: 50%;
   }
 }

@@ -4,7 +4,7 @@ import styles from './CharactersList.module.scss';
 import CharacterItem from '../CharacterItem/CharacterItem';
 
 const CharactersList: FC = () => {
-  const { characters } = useAppSelector((state) => state.charactersReducer);
+  const { characters, totalCount } = useAppSelector((state) => state.charactersReducer);
 
   const sortedCharacters = useSort(characters, 'name');
 
@@ -15,7 +15,16 @@ const CharactersList: FC = () => {
               const {
                 id, image, name, species,
               } = character;
-              return <CharacterItem key={id} id={id} image={image} name={name} species={species} />;
+              return (
+                <CharacterItem
+                  key={id}
+                  id={id}
+                  image={image}
+                  name={name}
+                  species={species}
+                  totalCount={totalCount}
+                />
+              );
             })
         }
     </div>
