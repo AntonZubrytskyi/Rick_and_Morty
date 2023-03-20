@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+.main {
+  &__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  &__container {
+    margin: 0 14%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main__wrapper {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main__wrapper {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    &__wrapper {
+      max-width: none;
+    }
+
+    &__container {
+      margin: 0 24px;
+    }
+  }
+}

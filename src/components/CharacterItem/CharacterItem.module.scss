@@ -1,0 +1,39 @@
+.item {
+  &__container {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 3px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  &__image {
+    border-radius: 4px;
+    width: 100%;
+    max-height: 168px;
+  }
+
+  &__text__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  &__species {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
