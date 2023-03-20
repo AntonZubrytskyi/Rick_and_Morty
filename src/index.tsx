@@ -15,13 +15,13 @@ const store = setupStore();
 
 root.render(
   <Provider store={store}>
-    <HashRouter>
-      <GoogleOAuthProvider clientId={clientId}>
+    <GoogleOAuthProvider clientId={clientId}>
+      <HashRouter>
         <React.StrictMode>
           <App />
         </React.StrictMode>
-      </GoogleOAuthProvider>
-    </HashRouter>
+      </HashRouter>
+    </GoogleOAuthProvider>
   </Provider>,
 );
 
