@@ -34,6 +34,7 @@ const CharactersPage = () => {
     };
 
     dispatch(getAllCharacters({ params }));
+    localStorageHelper.setToLocalStorage('params', params);
   }, [searchValue, currentPage]);
 
   useEffect(() => {
